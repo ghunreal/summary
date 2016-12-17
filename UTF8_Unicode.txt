@@ -6,3 +6,30 @@ Unicode符号范围 	| UTF-8编码方式						首字符范围
 0000 0080-0000 07FF | 110xxxxx 10xxxxxx  					(192 - 223)
 0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx			(224 - 239)
 0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx	(240 - 247)
+
+-- 字符数统计（UTF8编码）中文算两个字符 （lua版）
+	CalUTF8StringLen = function(str)
+		local lenInByte = #str;
+		local count = 0;
+		local idx = 1;
+		local chW = ChatProxy.CH_CHARACTER_WIDTH;
+		
+		while idx <= lenInByte do
+			local curByte = string.byte(str, idx);
+			if curByte > 0 and curByte < 128 then
+				idx = idx + 1;
+				count = count + 1;
+			elseif curByte >= 192 and curByte < 224 then
+				idx = idx + 2;
+				count = count + chW;
+			elseif curByte >= 224 and curByte < 240 then
+				idx = idx + 3;
+				count = count + chW;
+			elseif curByte >= 240 and curByte < 247 then
+				idx = idx + 4;
+				count = count + chW;
+			end
+		end
+		
+		return count;
+	end
