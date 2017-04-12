@@ -7,3 +7,6 @@ http://www.jianshu.com/p/2dc2b816f1a4
 
 http://legacy.rivaltheory.com/wiki/behaviortrees/behaviortreeeditor
 
+== opengl
+learnopengl.pdf
+http://download.csdn.net/detail/github_35160620/9553967
