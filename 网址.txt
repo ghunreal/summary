@@ -8,5 +8,28 @@ http://www.jianshu.com/p/2dc2b816f1a4
 http://legacy.rivaltheory.com/wiki/behaviortrees/behaviortreeeditor
 
 == opengl
-learnopengl.pdf
+	learnopengl.pdf
 http://download.csdn.net/detail/github_35160620/9553967
+
+	GLAPI/glShaderSource - OpenGL.org
+https://www.opengl.org/wiki/GLAPI/glShaderSource
+
+
+https://learnopengl.com/#!Advanced-OpenGL/Instancing
+
+
+	Unreal4 学习资源合集 - 虚幻与真实 - 知乎专栏
+https://zhuanlan.zhihu.com/p/23712250?refer=VR2AR
+
+
+	3D图形的概念和渲染管线
+http://www.opengpu.org/bbs/forum.php?mod=viewthread&tid=7550&extra=page%3D1
+
+	数据结构中各种树
+http://www.cnblogs.com/maybe2030/p/4732377.html
+
+	== protocol-buffer
+https://developers.google.com/protocol-buffers/docs/cpptutorial
+
+
+
